@@ -4,17 +4,18 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=
-kernel.compiler=
-kernel.made=
+kernel.string=Skyline
+kernel.compiler=AOSP clang
+kernel.made=SHAND
 message.word=
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=
-supported.versions=
+device.name1=aljeter
+device.name2=jeter
+supported.versions=11.0-13.0
 supported.patchlevels=
 '; } # end properties
 
@@ -27,7 +28,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 
 ## boot shell variables
-block=;
+block=/dev/block/bootdevice/by-name/boot;
 is_slot_device=0;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
@@ -88,4 +89,3 @@ write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_
 
 #write_boot; # use flash_boot to skip ramdisk repack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
 ## end vendor_boot install
-

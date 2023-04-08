@@ -23,6 +23,10 @@ ui_print() {
     shift;
   done;
 }
+
+ui_print "------- S K Y L I N E  K E R N E L-------"
+ui_print "--------KERNEL BY  S H A N D-------------";
+
 ui_printfile() {
   local line losrpad;
   $BOOTMODE || [ -e /twres ] || losrpad='| '; # work around LOS Recovery eating leading whitespace
@@ -523,3 +527,6 @@ fi;
 ui_print "- Done";
 ui_print " " "_________________________________________________";
 ui_print " " "$MESSAGE_WORD" "_________________________________________________" " ";
+ui_print ""
+ui_print " " "THANK YOU FOR USING S K Y L I N E"
+ui_print " " " ";
