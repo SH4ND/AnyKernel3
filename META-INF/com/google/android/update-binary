@@ -23,6 +23,10 @@ ui_print() {
     shift;
   done;
 }
+
+ui_print "------- M I M I R  K E R N E L-------"
+ui_print "--------KERNEL BY  V H M I T------------";
+
 ui_printfile() {
   local line losrpad;
   $BOOTMODE || [ -e /twres ] || losrpad='| '; # work around LOS Recovery eating leading whitespace
@@ -523,3 +527,6 @@ fi;
 ui_print "- Done";
 ui_print " " "_________________________________________________";
 ui_print " " "$MESSAGE_WORD" "_________________________________________________" " ";
+ui_print ""
+ui_print " " "THANK YOU FOR USING M I M I R"
+ui_print " " " ";
