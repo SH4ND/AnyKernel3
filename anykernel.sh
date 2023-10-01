@@ -5,20 +5,17 @@
 # begin properties
 properties() { '
 kernel.string=Scarlet-X
-kernel.compiler=Neutron Clang 17
-kernel.made=Tashar
+kernel.compiler=AOSP ClANG 17
+kernel.made=SH4ND,Tashar
 message.word=Thank you for installing Scarlet-X
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=lavender
-device.name2=tulip
-device.name3=jasmine_sprout
-device.name4=wayne
-device.name5=whyred
-supported.versions=9 - 13
+device.name1=wayne
+device.name2=jasmine_sprout
+supported.versions=11 - 13
 supported.patchlevels=
 '; } # end properties
 
