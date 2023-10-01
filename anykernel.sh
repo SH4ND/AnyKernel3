@@ -5,8 +5,8 @@
 # begin properties
 properties() { '
 kernel.string=Scarlet-X
-kernel.compiler=Neutron Clang 17
-kernel.made=Tashar
+kernel.compiler=AOSP ClANG 17
+kernel.made=SH4ND,Tashar
 message.word=Thank you for installing Scarlet-X
 do.devicecheck=1
 do.modules=0
@@ -14,11 +14,7 @@ do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
 device.name1=lavender
-device.name2=tulip
-device.name3=jasmine_sprout
-device.name4=wayne
-device.name5=whyred
-supported.versions=9 - 13
+supported.versions=11 - 13
 supported.patchlevels=
 '; } # end properties
 
@@ -31,7 +27,7 @@ set_perm_recursive 0 0 750 750 $ramdisk/init* $ramdisk/sbin;
 
 # shell variables
 block=/dev/block/bootdevice/by-name/boot;
-is_slot_device=auto;
+is_slot_device=0;
 ramdisk_compression=auto;
 patch_vbmeta_flag=auto;
 
