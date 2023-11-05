@@ -11,14 +11,7 @@ do.cleanup=1
 do.cleanuponabort=0
 device.name1=alioth
 device.name2=aliothin
-device.name3=apollo
-device.name4=apolloin
-device.name5=lmi
-device.name6=cmi
-device.name7=umi
-device.name8=munch
-device.name9=munchin
-supported.versions=11 - 13
+supported.versions=13 - 14
 supported.patchlevels=
 '; } # end properties
 
