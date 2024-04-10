@@ -13,8 +13,8 @@ do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=beckham
-supported.versions=11.0-14.0
+device.name1=evert
+supported.versions=12.0-13.0
 supported.patchlevels=
 supported.vendorpatchlevels=
 '; } # end properties
